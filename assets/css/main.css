@@ -1,0 +1,16 @@
+@tailwind components;
+
+@layer components {
+  .bg-blur {
+    @apply bg-gray-900 bg-opacity-75 text-white;
+    backdrop-filter: blur(5px) saturate(200%);
+  }
+  h1 {
+    @apply text-6xl font-semibold text-center mb-8 border-b-4 border-pink-500 whitespace-nowrap;
+    width: min-content;
+  }
+}
+
+::selection {
+  background: #ec4899;
+}
