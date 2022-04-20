@@ -10,6 +10,7 @@ content: [
         extend: {
             spacing: {
                 'min-content': 'min-content',
+                '100': '35rem'
               }
         },
     },
