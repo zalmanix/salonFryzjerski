@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="card w-min-content flex flex-col mx-auto justify-center items-center">
-      <span class="bg-blur text-8xl p-5 whitespace-nowrap">Sylwia Bałdo</span>
-      <span class="bg-pink-500 w-full p-1 text-3xl text-center text-white">Salon Fryzjerski</span>
+      <span class="bg-blur text-5xl md:text-8xl p-5 whitespace-nowrap">Sylwia Bałdo</span>
+      <span class="bg-pink-500 w-full p-1 text-xl md:text-3xl text-center text-white">Salon Fryzjerski</span>
     </div>
     <div class="main-bg">
     </div>
@@ -30,7 +30,7 @@
     <div class="bg-gray-100 p-10 border-t flex flex-col justify-center items-center">
       <h1>Cennik</h1>
 
-      <div class="2xl:w-3/4 flex flex-row flex-wrap justify-center mt-5">
+      <div class="2xl:w-3/4 flex flex-row flex-wrap justify-center items-center mt-5">
         <panel 
           v-for="(price, i) in prices" 
           :key="i" 
@@ -43,9 +43,9 @@
     </div>
     <div class="bg-blur p-5 flex flex-col justify-center items-center">
       <h1>Zapraszamy!</h1>
-      <div class="flex flex-col md:flex-row items-top">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2568.862773579007!2d20.51270831586922!3d49.9201504333133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471623fac6052c2b%3A0x901465c15951d230!2sKobyle%20297%2C%2032-720%20Kobyle!5e0!3m2!1spl!2spl!4v1650461456860!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="text-lg ml-10 mt-10 md:mt-0 text-center md:text-left">
+      <div class="flex flex-col md:flex-row items-top w-full h-100 md:w-4/5 xl:w-3/5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2568.862773579007!2d20.51270831586922!3d49.9201504333133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471623fac6052c2b%3A0x901465c15951d230!2sKobyle%20297%2C%2032-720%20Kobyle!5e0!3m2!1spl!2spl!4v1650461456860!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="flex-grow mx-4 sm:mx-10 md:mx-0"></iframe>
+        <p class="md:w-1/3 text-lg mx-4 sm:mx-0 md:ml-10 mt-10 md:mt-0 text-center md:text-left">
           <b>Adres:</b> Kobyle 297, 32-720 Nowy Wiśnicz
           <br />
           <b>Telefon:</b> 784 554 540
@@ -90,7 +90,7 @@ export default {
   data: () => ({
     prices: [
       {
-        name: 'Farbowanie włosów',
+        name: 'Farbowanie',
         price: '10',
         img: 'img_1.jpg'
       },
@@ -100,7 +100,7 @@ export default {
         img: 'img_1.jpg'
       },
       {
-        name: 'Farbowanie włosów',
+        name: 'Farbowanie',
         price: '10',
         img: 'img_1.jpg'
       },
